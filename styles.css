@@ -1,0 +1,123 @@
+/* Body */
+
+body {
+    background: darkmagenta;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    min-height: 3800px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texts */
+
+.para {
+    position: relative;
+    animation: fade-in 2s;
+    font-size: 250%;
+}
+
+.nopara {
+    position: absolute;
+}
+
+/* Spacer? */
+
+.spacer {
+    min-height: 1000px;
+}
+
+/* Projects portion */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav img {
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0 0 10px;
+    border: 1px solid white;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+nav img:hover {
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: rgb(59, 59, 59) 0 0 50px;
+    border: 1px solid white;
+    transform: scale(1.2);
+}
+
+/* First text */
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: darkmagenta;
+}
+
+.front::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, darkmagenta 60%, transparent);
+    z-index: 1000
+}
+
+/* Second text */
+
+.front-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.front-two::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to top, darkmagenta 60%, transparent);
+    z-index: 2000;
+    top: 1000px
+}
+
+/* Third text */
+
+.front-three {
+    display: flex;
+    justify-content: center;
+    z-index: 2000;
+    top: 1000px;
+    height: 100px;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
