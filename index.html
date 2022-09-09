@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Welsome</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="front">
-        <h1 class="para" id="one">Hi, I'm Michael.</h1>
+        <h1 class="para" data-aos="fade-up" id="one">Hi, I'm Michael.</h1>
     </div>
     <div class="front-two" id="div-two">
-        <h1 class="para" id="two">I'm a University Student.</h1>
+        <h1 class="para" data-aos="flip-left" id="two">I'm a University Student.</h1>
     </div>
 
     <div class="spacer"></div>
@@ -22,12 +23,24 @@
         <h1 class="nopara" id="three">Here are my projects:</h1>
     </div>
     <nav class="grid">
-        <img src="images/hearttoheart.png" alt="Heart-to-Heart PyGame" id="image">
-        <img src="images/hearttoheart.png" alt="Heart-to-Heart PyGame" id="image">
+        <a href="https://github.com/MiquilW/heart-to-heart" target="_blank">
+            <img src="images/hearttoheart.png" alt="Heart-to-Heart PyGame" id="image">
+        </a>
+        <a href="https://github.com/MiquilW/pokemon-viewer" target="_blank">
+            <img src="images/charmander.png" alt="Pokemon Viewer" id="image">
+        </a>    
     </nav>
 
     <footer>© 2022 Michael Welsome</footer>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init(
+        {
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+            offset: 0,
+            duration: 800
+        });</script>
 </body>
 </html>

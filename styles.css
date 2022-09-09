@@ -1,7 +1,7 @@
 /* Body */
 
 body {
-    background: darkmagenta;
+    background: rgb(53, 54, 58);
     height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
@@ -16,7 +16,6 @@ body {
 
 .para {
     position: relative;
-    animation: fade-in 2s;
     font-size: 250%;
 }
 
@@ -37,7 +36,17 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-nav img {
+nav a {
+    margin: auto;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+nav a:hover {
+    margin: auto;
+    transform: scale(1.2);
+}
+
+nav a img {
     margin: auto;
     border-radius: 50%;
     box-shadow: rgb(0, 0, 0) 0 0 10px;
@@ -45,7 +54,7 @@ nav img {
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
-nav img:hover {
+nav a img:hover {
     margin: auto;
     border-radius: 50%;
     box-shadow: rgb(59, 59, 59) 0 0 50px;
@@ -61,18 +70,8 @@ nav img:hover {
     align-items: center;
     height: 100vh;
     position: relative;
-    background: darkmagenta;
 }
 
-.front::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(to top, darkmagenta 60%, transparent);
-    z-index: 1000
-}
 
 /* Second text */
 
@@ -84,24 +83,12 @@ nav img:hover {
     position: relative;
 }
 
-.front-two::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(to top, darkmagenta 60%, transparent);
-    z-index: 2000;
-    top: 1000px
-}
-
 /* Third text */
 
 .front-three {
     display: flex;
     justify-content: center;
     z-index: 2000;
-    top: 1000px;
     height: 100px;
 }
 
@@ -114,10 +101,4 @@ footer {
     font-size: 12px;
     text-align: center;
     margin-top: auto;
-}
-
-/* Animations */
-@keyframes fade-in {
-    from {opacity: 0%}
-    to {opacity: 100%}
 }
