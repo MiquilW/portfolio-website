@@ -1,49 +1,39 @@
+html {
+    font-size: 200%;
+    text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
+    scroll-behavior: smooth; 
+    }
+    
 /* Body */
 
 body {
     background: rgb(53, 54, 58);
-    height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    min-height: 3800px;
     display: flex;
     flex-direction: column;
-}
-
-/* Texts */
-
-.para {
-    position: relative;
-    font-size: 250%;
-}
-
-.nopara {
-    position: absolute;
-}
-
-/* Spacer? */
-
-.spacer {
-    min-height: 1000px;
 }
 
 /* Projects portion */
 
 .grid {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 nav a {
+    translate: 0px -350px;
     margin: auto;
-    transition: transform 0.5s, box-shadow 0.5s;
+    scale: 1.5;
+    transition: scale 0.5s
 }
 
 nav a:hover {
     margin: auto;
-    transform: scale(1.2);
+    scale: 1.7;
 }
 
 nav a img {
@@ -51,45 +41,41 @@ nav a img {
     border-radius: 50%;
     box-shadow: rgb(0, 0, 0) 0 0 10px;
     border: 1px solid white;
-    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 nav a img:hover {
     margin: auto;
-    border-radius: 50%;
-    box-shadow: rgb(59, 59, 59) 0 0 50px;
-    border: 1px solid white;
-    transform: scale(1.2);
+}
+
+.projects {
+    justify-content: center;
+    align-items: center;
 }
 
 /* First text */
 
-.front {
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
 }
 
-
-/* Second text */
-
-.front-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+.header {
+    height: 4vw;
+    font-weight: 400;
 }
 
-/* Third text */
+span {
+    color: rgb(231, 144, 159);
+}
 
-.front-three {
-    display: flex;
-    justify-content: center;
-    z-index: 2000;
-    height: 100px;
+h6 {
+    color: rgb(90, 90, 90);
+    text-shadow: none;
+    font-size: 50%;
+    translate: 0px -40px;
+    text-align: center;
 }
 
 /* Footer */
