@@ -28,12 +28,14 @@ nav a {
     translate: 0px -350px;
     margin: auto;
     scale: 1.5;
-    transition: scale 0.5s
+    transition: scale 0.5s;
+    z-index: 1;
 }
 
 nav a:hover {
     margin: auto;
     scale: 1.7;
+    cursor: pointer;
 }
 
 nav a img {
@@ -52,7 +54,7 @@ nav a img:hover {
     align-items: center;
 }
 
-/* First text */
+/* Text adjustments */
 
 .centered {
     display: flex;
@@ -76,6 +78,81 @@ h6 {
     font-size: 50%;
     translate: 0px -40px;
     text-align: center;
+}
+
+p {
+    font-size: medium;
+}
+
+.link {
+    font-size: 70%;
+    width: 115px;
+    height: 25px;
+    background: #303030;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    color: rgb(231, 144, 159);
+}
+
+/* Popups */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    scale: 0;
+    background-color: rgb(78, 78, 78);
+    z-index: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid rgb(165, 165, 165);
+}
+
+.popup .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay {
+    display: block;
+    z-index: 1;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    z-index: 2;
+    scale: 1;
+    translate: -50% -50%
 }
 
 /* Footer */

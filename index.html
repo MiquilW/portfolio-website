@@ -7,6 +7,7 @@
     <title>Michael Welsome</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 
 </head>
 <body>
@@ -32,12 +33,37 @@
 
     <section class="projects">
         <nav class="grid">
-            <a href="https://github.com/MiquilW/heart-to-heart" target="_blank">
+            <!-- Heart-to-Heart -->
+            <a onclick="togglePopup()">
                 <img src="images/hearttoheart.png" data-aos="fade-up" alt="Heart-to-Heart PyGame" id="image">
             </a>
-            <a href="https://github.com/MiquilW/pokemon-viewer" target="_blank">
+
+            <!-- Pokemon Viewer -->
+            <a onclick="togglePopupTwo()">
                 <img src="images/charmander.png" data-aos="fade-up" alt="Pokemon Viewer" id="image">
-            </a>    
+            </a>
+            
+            <!-- Popup 1 -->
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close" onclick="togglePopup()">&times;</div>
+                    <h1 class="title">Heart-to-Heart</h1>
+                    <p>Change this. Change this. Change this. Change this. Change this. Change this. Change this.</p>
+                    <a class="link" href="https://github.com/MiquilW/heart-to-heart" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Popup 2 -->
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close" onclick="togglePopupTwo()">&times;</div>
+                    <h1 class="title">Pokémon Viewer</h1>
+                    <p>Change this.</p>
+                    <a class="link" href="https://github.com/MiquilW/pokemon-viewer" target="_blank">GitHub</a>
+                </div>
+            </div>
         </nav>
     </section>
 
