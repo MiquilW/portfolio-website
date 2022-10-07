@@ -14,7 +14,7 @@
     <section class="centered">
         <div class="header">
             <h1 data-aos="fade-up">Hi, I'm <span>Michael</span>.</h1>
-            <h6 data-aos="fade-up" data-aos-delay="800">scroll :)</h6>
+            <h6 class="secret" data-aos="fade-up" data-aos-delay="800">scroll :)</h6>
         </div>
     </section>
 
@@ -42,6 +42,10 @@
             <a onclick="togglePopupTwo()">
                 <img src="images/charmander.png" data-aos="fade-up" alt="Pokemon Viewer" id="image">
             </a>
+
+            <a onclick="togglePopupThree()">
+                <img src="images/website.png" data-aos="fade-up" alt="Pokemon Viewer" id="image">
+            </a>
             
             <!-- Popup 1 -->
             <div class="popup" id="popup-1">
@@ -49,7 +53,15 @@
                 <div class="content">
                     <div class="close" onclick="togglePopup()">&times;</div>
                     <h1 class="title">Heart-to-Heart</h1>
-                    <p>Change this. Change this. Change this. Change this. Change this. Change this. Change this.</p>
+                    <img src="images/heart2heartingame.png" class="popup-img">
+                    <h4 class="tech-used">TECHNOLOGIES USED: <br/>
+                        <span>Python, PyGame</span>
+                    </h4>
+                    <h6 class="description">
+                        • Crafted an addictive, unending game from the ground up in 48 hours for a friendly game jam. <br/>
+                        • Wrote and created all of the game logic and art, including a physics system and power-up system. <br/>
+                        • Decided not to use a game engine because I sought to understand how games work internally.
+                    </h6>
                     <a class="link" href="https://github.com/MiquilW/heart-to-heart" target="_blank">GitHub</a>
                 </div>
             </div>
@@ -60,8 +72,35 @@
                 <div class="content">
                     <div class="close" onclick="togglePopupTwo()">&times;</div>
                     <h1 class="title">Pokémon Viewer</h1>
-                    <p>Change this.</p>
+                    <img src="images/pokemonviewerexample.png" class="popup-img">
+                    <h4 class="tech-used">TECHNOLOGIES USED: <br/>
+                        <span>HTML/CSS, JavaScript, React, Axios</span>
+                    </h4>
+                    <h6 class="description">
+                        • Used React, HTML, CSS, and JavaScript to build a simple Pokémon sprite viewer. <br/>
+                        • Grabbed from an API (PokéAPI) using Axios to display the Pokémon sprites. <br/>
+                        • Implemented buttons for displaying different Pokémon forms using React’s useState hooks.
+                    </h6>
                     <a class="link" href="https://github.com/MiquilW/pokemon-viewer" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+
+            <!-- Popup 3 -->
+            <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close" onclick="togglePopupThree()">&times;</div>
+                    <h1 class="title">Personal Website</h1>
+                    <img src="images/websiteexample.png" class="popup-img">
+                    <h4 class="tech-used">TECHNOLOGIES USED: <br/>
+                        <span>HTML/CSS, JavaScript</span>
+                    </h4>
+                    <h6 class="description">
+                        • Created a minimalistic personal website to showcase some of my projects. <br/>
+                        • Constantly updating when new ideas come to me! <br/>
+                    </h6>
+                    <a class="link" href="https://github.com/MiquilW/new-portfolio-website" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>

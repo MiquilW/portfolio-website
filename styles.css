@@ -21,7 +21,7 @@ body {
 .grid {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 nav a {
@@ -72,12 +72,30 @@ span {
     color: rgb(231, 144, 159);
 }
 
-h6 {
+.secret {
     color: rgb(90, 90, 90);
     text-shadow: none;
     font-size: 50%;
     translate: 0px -40px;
     text-align: center;
+}
+
+.tech-used {
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+.description {
+    margin-top: 3%;
+    font-size: 50%;
+    line-height: 140%;
+    margin-bottom: 3%;
+}
+
+.popup-img {
+    size: 50%;
+    border-radius: 2%;
+    border: 1px solid white;
 }
 
 p {
@@ -93,6 +111,10 @@ p {
     border-radius: 5px;
     color: white;
     font-weight: bold;
+}
+
+.link:hover {
+    border: 1px solid rgb(151, 151, 151);
 }
 
 .title {
