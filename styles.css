@@ -12,21 +12,25 @@ body {
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 /* Projects portion */
 
 .grid {
-    align-items: center;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 nav a {
-    translate: 0px -350px;
-    margin: auto;
+    margin: 0;
     scale: 1.5;
     transition: scale 0.5s;
     z-index: 1;
@@ -42,26 +46,20 @@ nav a img {
     margin: auto;
     border-radius: 50%;
     box-shadow: rgb(0, 0, 0) 0 0 10px;
-    border: 1px solid white;
 }
 
-nav a img:hover {
+/* nav a img:hover {
     margin: auto;
-}
-
-.projects {
-    justify-content: center;
-    align-items: center;
-}
+} */
 
 /* Text adjustments */
 
-.centered {
+/* .centered {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+} */
 
 .header {
     height: 4vw;
