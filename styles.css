@@ -1,5 +1,5 @@
 html {
-    font-size: 200%;
+    font-size: 220%;
     text-shadow: 3px 2px 2px rgba(199, 130, 59, 0.15);
     scroll-behavior: smooth; 
     }
@@ -62,7 +62,7 @@ nav a img {
 } */
 
 .header {
-    height: 4vw;
+    height: 8vw;
     font-weight: 400;
 }
 
